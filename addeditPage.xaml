@@ -1,0 +1,72 @@
+﻿<Window x:Class="Velomax.addeditPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Velomax"
+        mc:Ignorable="d"
+        Title="addeditPage" Height="445.187" Width="619.52">
+    <Grid>
+        <Grid Name="StdGrid" Margin="10,10,-10,-10">
+            <TextBox Name="Tb1" HorizontalAlignment="Left" Height="26" Margin="188,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label Name="Label1" Content="Label" HorizontalAlignment="Left" Margin="42,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <Label x:Name="Label2" Content="Label" HorizontalAlignment="Left" Margin="42,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <TextBox x:Name="Tb2" HorizontalAlignment="Left" Height="26" Margin="188,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="Tb3" HorizontalAlignment="Left" Height="26" Margin="188,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label x:Name="Label3" Content="Label" HorizontalAlignment="Left" Margin="42,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <TextBox x:Name="Tb4" HorizontalAlignment="Left" Height="26" Margin="188,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label x:Name="Label4" Content="Label" HorizontalAlignment="Left" Margin="42,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+
+            <Button Content="Enregistrer" HorizontalAlignment="Left" Margin="413,373,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <TextBox x:Name="Tb5" HorizontalAlignment="Left" Height="26" Margin="188,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label x:Name="Label5" Content="Label" HorizontalAlignment="Left" Margin="42,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <Label x:Name="Label6" Content="Label" HorizontalAlignment="Left" Margin="42,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <TextBox x:Name="Tb6" HorizontalAlignment="Left" Height="26" Margin="188,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="Tb7" HorizontalAlignment="Left" Height="26" Margin="188,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label x:Name="Label7" Content="Label" HorizontalAlignment="Left" Margin="42,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <TextBox x:Name="Tb8" HorizontalAlignment="Left" Height="26" Margin="188,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label x:Name="Label8" Content="Label" HorizontalAlignment="Left" Margin="42,230,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+            <TextBox x:Name="Tb9" HorizontalAlignment="Left" Height="26" Margin="188,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" VerticalContentAlignment="Center"/>
+            <Label x:Name="Label9" Content="Label" HorizontalAlignment="Left" Margin="42,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,-1.778" Width="131" FlowDirection="RightToLeft"/>
+        </Grid>
+        <Grid Name="CmdGrid" Margin="10,55,0,-51">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="149*"/>
+                <RowDefinition Height="58*"/>
+            </Grid.RowDefinitions>
+            <Label Content= "Num Commande" VerticalAlignment="Center" Margin="109,33,-109,225" Height="37"/>
+            <RadioButton GroupName="group1" x:Name="rbpiece" Content="Pièce" HorizontalAlignment="Left" Margin="77,77,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="group1" x:Name="rbmodele" Content="Modèle" HorizontalAlignment="Left" Margin="77,97,0,0" VerticalAlignment="Top"/>
+            <Label Name="product_id" Content= "Id" VerticalAlignment="Center" Margin="188,79,-188,175" Height="41"/>
+            <RadioButton GroupName="group2" x:Name="rbclp" Content="Client Particulier" HorizontalAlignment="Left" Margin="77,140,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="group2"  x:Name="rbcle" Content="Client Entreprise" HorizontalAlignment="Left" Margin="77,160,0,0" VerticalAlignment="Top"/>
+            <Label Name="client_id" Content= "Id" VerticalAlignment="Center" Margin="188,142,-188,109" Height="44"/>
+            <Label Name="qte" Content="Quantité"   VerticalAlignment="Center" Margin="326,79,-326,183" Height="33" />
+            <Button Content="Enregistrer" HorizontalAlignment="Left" Margin="251,240,0,0" VerticalAlignment="Top" Width="75" Click="OnCmdClick"/>
+            <TextBox Name="idp" HorizontalAlignment="Left" Height="23" Margin="216,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66"/>
+            <TextBox x:Name="idc" HorizontalAlignment="Left" Height="23" Margin="216,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66"/>
+            <TextBox x:Name="numcmd" HorizontalAlignment="Left" Height="23" Margin="217,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65"/>
+            <ComboBox Name="combobox" HorizontalAlignment="Left" Margin="404,80,0,0" VerticalAlignment="Top" Width="62">
+                <ComboBoxItem>1</ComboBoxItem>
+                <ComboBoxItem>2</ComboBoxItem>
+                <ComboBoxItem>3</ComboBoxItem>
+                <ComboBoxItem>4</ComboBoxItem>
+                <ComboBoxItem>5</ComboBoxItem>
+                <ComboBoxItem>6</ComboBoxItem>
+
+            </ComboBox>
+        </Grid>
+        <Grid Name="AdresseGrid" Margin="0,10,0,-10">
+            <Label Content="Adresse :  Voie" HorizontalAlignment="Left" Margin="132,292,0,0" VerticalAlignment="Top" Width="99"/>
+            <TextBox Name="Voie" HorizontalAlignment="Left" Height="23" Margin="231,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+            <Label Content="Ville" HorizontalAlignment="Left" Margin="188,323,0,0" VerticalAlignment="Top" Width="72"/>
+            <TextBox Name="Ville" HorizontalAlignment="Left" Height="23" Margin="231,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+            <TextBox Name="Code_Postal" HorizontalAlignment="Left" Height="23" Margin="442,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+            <TextBox Name="Province" HorizontalAlignment="Left" Height="23" Margin="442,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+            <Label Content="Code Postal" HorizontalAlignment="Left" Margin="364,295,0,0" VerticalAlignment="Top"/>
+            <Label Content="Province" HorizontalAlignment="Left" Margin="382,326,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        
+
+    </Grid>
+</Window>
